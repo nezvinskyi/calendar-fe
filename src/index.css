@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+@import './stylesheet/vars.css';
 
 body {
   margin: 0;
@@ -9,4 +10,9 @@ body {
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+a,
+button {
+  text-decoration: none;
 }
