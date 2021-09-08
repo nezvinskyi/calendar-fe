@@ -1,12 +1,15 @@
-import { CalendarLayout, TimeScale, Events } from './components/';
+import { Switch } from 'react-router-dom';
+
+import { PrivatRoute, PublicRoute } from './routes';
+import { CalendarPage, LoginPage, RegistrationPage } from './screens';
 const App = () => {
   return (
     <>
-      <h1>Calendar</h1>
-      <CalendarLayout>
-        <TimeScale />
-        <Events />
-      </CalendarLayout>
+      <Switch>
+        <PublicRoute restricted redirectTo="/" path="/register" component={RegistrationPage} />
+        <PublicRoute restricted redirectTo="/" path="/login" component={LoginPage} />
+        <PrivatRoute path="/" exact component={CalendarPage} redirectTo="/login" />
+      </Switch>
     </>
   );
 };
