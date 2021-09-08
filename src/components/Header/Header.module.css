@@ -1,0 +1,10 @@
+.header {
+  display: flex;
+  align-items: center;
+}
+.title {
+  margin-right: auto;
+}
+.userbox {
+  margin-right: 10px;
+}

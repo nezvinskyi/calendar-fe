@@ -1,9 +1,9 @@
-import { CalendarLayout, TimeScale, Events } from '../../components';
+import { CalendarLayout, TimeScale, Events, Header } from '../../components';
 
 const CalendarPage = () => {
   return (
     <>
-      <h1>Calendar</h1>
+      <Header />
       <CalendarLayout>
         <TimeScale />
         <Events />
