@@ -1,0 +1,20 @@
+.timeScale {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.slot {
+  height: 60px;
+  color: grey;
+}
+
+.slot:nth-child(odd) {
+  background-color: #fff;
+  border-top: 1px solid #e2ecf5;
+  font-size: 16px;
+}
+
+.slot:nth-child(even) {
+  font-size: 14px;
+}

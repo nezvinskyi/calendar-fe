@@ -1,0 +1,7 @@
+.layoutContainer {
+  position: relative;
+  margin: 0 auto;
+  width: 250px;
+  /* height: 100vh; */
+  /* background-color: teal; */
+}
