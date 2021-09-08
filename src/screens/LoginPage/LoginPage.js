@@ -1,24 +1,24 @@
 import { Button, Container, Form } from 'react-bootstrap';
 import css from './LoginPage.module.css';
 import { useState } from 'react';
-// import { useDispatch } from 'react-redux';
-// import { userOperations } from '../../redux/user';
+import { useDispatch } from 'react-redux';
+import { userOperations } from '../../redux/user';
 import * as validate from '../../helpers/validate';
-// import { sessionOperations } from '../../redux/session';
+import { sessionOperations } from '../../redux/session';
 
 const LoginPage = ({ history }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  // const dispatch = useDispatch();
+  const dispatch = useDispatch();
 
   const submitHandler = async e => {
     try {
       e.preventDefault();
       await validate.login({ email, password });
-      // dispatch(userOperations.login({ email, password }));
+      dispatch(userOperations.login({ email, password }));
     } catch (error) {
-      // dispatch(sessionOperations.setError(error.toString()));
+      dispatch(sessionOperations.setError(error.toString()));
     }
   };
 
