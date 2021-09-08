@@ -29,8 +29,8 @@
 .primaryBtn {
   color: var(--main-clr);
   background-color: var(--bg-clr);
-  width: 300px;
-  height: 50px;
+  /* width: 300px;
+  height: 50px; */
   margin-top: 20px;
   margin-bottom: 20px;
   border: none;
@@ -43,8 +43,8 @@
 .secondaryBtn {
   color: var(--main-clr);
   background-color: #fff;
-  width: 300px;
-  height: 50px;
+  /* width: 300px;
+  height: 50px; */
   border: 1px solid var(--main-clr);
   border-radius: 20px;
 }
