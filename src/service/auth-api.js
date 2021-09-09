@@ -16,17 +16,10 @@ const registerUser = async (name, email, password) => {
 
 const loginUser = async (email, password) => {
   const { data } = await axios.post('/api/v1/users/login', { email, password }, config);
-
   return data;
 };
 
 const updateUser = async user => {
-  // const config = {
-  //   headers: {
-  //     'Content-Type': 'application/json',
-  //     Authorization: `Bearer ${token}`,
-  //   },
-  // };
   const { data } = await axios.post('api/v1/users/profile', user);
 
   return data;

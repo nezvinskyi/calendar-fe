@@ -110,63 +110,6 @@ const RegistrationPage = ({ history }) => {
               </Button>
             </div>
           </Form>
-          {/* <div className={css.formWrapper}>
-            <form className={css.form} onSubmit={submitHandler} autoComplete="off">
-              <label htmlFor="" className={css.inputLabelMail}></label>
-              <input
-                className={css.inputItem}
-                type="email"
-                name="email"
-                required
-                placeholder="E-mail"
-                value={email}
-                onChange={e => setEmail(e.target.value)}
-              />
-
-              <label htmlFor="" className={css.inputLabelPassword}></label>
-              <input
-                className={css.inputItem}
-                type="password"
-                name="password"
-                required
-                placeholder="Password"
-                value={password}
-                onChange={e => setPassword(e.target.value)}
-              />
-
-              <label htmlFor="" className={css.inputLabelPassword}></label>
-              <input
-                className={css.inputItem}
-                type="password"
-                name="confirmPassword"
-                required
-                placeholder="Confirm password"
-                value={confirmPassword}
-                onChange={e => setConfirmPassword(e.target.value)}
-              />
-
-              <label htmlFor="" className={css.inputLabelUser}></label>
-              <input
-                className={css.inputItem}
-                type="name"
-                name="name"
-                required
-                placeholder="Your name"
-                value={name}
-                onChange={e => setName(e.target.value)}
-              />
-
-              <div className={css.btnGroup}>
-                <Button variant="primary" type="submit" style={styles.primaryBtn}>
-                  REGISTER
-                </Button>
-
-                <Button variant="primary" type="button" style={styles.secondaryBtn}>
-                  <Link to="/login">LOGIN</Link>
-                </Button>
-              </div>
-            </form>
-          </div> */}
         </div>
       </Container>
     </div>

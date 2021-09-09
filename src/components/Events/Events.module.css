@@ -11,7 +11,6 @@
 .event {
   position: absolute;
   width: 200px;
-  /* color:  */
   background-color: var(--bg-clr);
   border-left: 3px solid var(--main-clr);
   white-space: nowrap;
@@ -32,7 +31,6 @@
   width: 10px;
   border-radius: 50%;
   border: 1px solid var(--main-clr);
-  /* background-color: white; */
   background-image: url('../../assets/images/close-icon.svg');
   background-position: center;
   cursor: pointer;

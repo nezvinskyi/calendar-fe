@@ -13,7 +13,7 @@ const AddEventForm = () => {
 
   const [title, setTitle] = useState('');
   const [start, setStart] = useState('08:00');
-  const [duration, setDuration] = useState(15);
+  const [duration, setDuration] = useState(60);
   const [comments, setComments] = useState('');
 
   const submitHandler = async e => {

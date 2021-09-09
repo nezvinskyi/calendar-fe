@@ -1,7 +1,7 @@
 import { combineReducers, createReducer } from '@reduxjs/toolkit';
 import * as actions from './user-actions';
 
-const initialValue = { name: null, email: null };
+const initialValue = { name: null, email: null, avatar: null };
 
 const userInfo = createReducer(initialValue, {
   [actions.registerSuccess]: (_, { payload }) => payload.user,

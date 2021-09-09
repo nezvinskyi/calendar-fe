@@ -6,5 +6,18 @@
   margin-right: auto;
 }
 .userbox {
+  align-items: center;
+  display: flex;
+  margin-right: 10px;
+}
+
+.avatar {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.btn {
   margin-right: 10px;
 }
