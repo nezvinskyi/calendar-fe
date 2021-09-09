@@ -6,12 +6,12 @@ import { globalOperations } from '../../redux/global';
 
 const inlineStyles = {
   addBtn: {
-    backgroundColor: '#0d6efd',
+    // backgroundColor: '#0d6efd',
     width: '44px',
     height: '44px',
     borderRadius: '50%',
     padding: '0px',
-    border: 'none',
+    // border: 'none',
     position: 'fixed',
     bottom: '2em',
     right: '2em',
@@ -27,7 +27,7 @@ const AddBtn = () => {
 
   return (
     <>
-      <Button onClick={openModal} style={inlineStyles.addBtn}>
+      <Button variant="secondary" onClick={openModal} style={inlineStyles.addBtn}>
         <img src={addIcon} alt="" />
       </Button>
     </>

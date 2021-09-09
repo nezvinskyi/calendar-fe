@@ -24,31 +24,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 30px;
 }
 
 .primaryBtn {
-  color: var(--main-clr);
-  background-color: var(--bg-clr);
-  width: 300px;
-  height: 50px;
-  margin-top: 20px;
+  width: 100%;
   margin-bottom: 20px;
-  border: none;
-  border-radius: 20px;
-}
-.primaryBtn:hover {
-  background-color: var(--main-clr);
 }
 
 .secondaryBtn {
-  color: var(--main-clr);
-  background-color: #fff;
-  width: 300px;
-  height: 50px;
-  border: 1px solid var(--main-clr);
-  border-radius: 20px;
-}
-.secondaryBtn:hover {
-  border: none;
-  background-color: var(--main-clr);
+  width: 100%;
 }

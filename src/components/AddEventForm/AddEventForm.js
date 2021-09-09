@@ -6,6 +6,8 @@ import { sessionOperations } from '../../redux/session';
 import { Container, Form, Button } from 'react-bootstrap';
 import { timeToMinutes } from '../../helpers/timeConverter';
 
+import css from './AddEventForm.module.css';
+
 const AddEventForm = () => {
   const dispatch = useDispatch();
 
@@ -28,7 +30,7 @@ const AddEventForm = () => {
   };
 
   const onClose = () => {
-    dispatch(globalOperations.openModalAddEvent());
+    dispatch(globalOperations.closeModalAddEvent());
   };
 
   return (
@@ -81,7 +83,15 @@ const AddEventForm = () => {
             onChange={e => setComments(e.target.value)}
           />
         </Form.Group>
-        <Button type="submit">Add event</Button>
+
+        <div className={css.btnGroup}>
+          <Button variant="secondary" type="submit" className={css.primaryBtn}>
+            Add event
+          </Button>
+          <Button variant="secondary" type="button" onClick={onClose} className={css.secondaryBtn}>
+            Cancel
+          </Button>
+        </div>
       </Form>
     </Container>
   );

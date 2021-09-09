@@ -12,7 +12,8 @@ const Events = () => {
     try {
       dispatch(calendarOperations.deleteEvent(id));
     } catch (error) {
-      dispatch(sessionOperations.setError(error.toString()));
+      console.log('error :>> ', error);
+      dispatch(sessionOperations.setError(error.message.toString()));
     }
   };
 

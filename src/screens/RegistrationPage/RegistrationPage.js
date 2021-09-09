@@ -94,11 +94,11 @@ const RegistrationPage = ({ history }) => {
             </Form.Group>
 
             <div className={css.btnGroup}>
-              <Button variant="primary" type="submit" className={css.primaryBtn}>
+              <Button variant="secondary" type="submit" className={css.primaryBtn}>
                 REGISTER
               </Button>
               <Button
-                variant="primary"
+                variant="secondary"
                 type="button"
                 className={css.secondaryBtn}
                 onClick={() => {

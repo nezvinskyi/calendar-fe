@@ -17,7 +17,9 @@ const Header = () => {
       <Container className={css.header}>
         <h1 className={css.title}>Calendar</h1>
         <div className={css.userbox}>User: {userName}</div>
-        <Button onClick={logoutHandler}>Logout</Button>
+        <Button variant="secondary" onClick={logoutHandler}>
+          Logout
+        </Button>
       </Container>
     </header>
   );

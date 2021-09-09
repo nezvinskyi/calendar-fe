@@ -1,0 +1,17 @@
+
+.btnGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+
+.primaryBtn {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.secondaryBtn {
+  width: 100%;
+}
