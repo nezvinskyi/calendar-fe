@@ -22,7 +22,7 @@ const AddBtn = () => {
   const dispatch = useDispatch();
 
   const openModal = () => {
-    dispatch(globalOperations.openModalAddTransaction());
+    dispatch(globalOperations.openModalAddEvent());
   };
 
   return (

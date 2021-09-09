@@ -1,9 +1,9 @@
 import * as actions from './global-actions';
 
-export const openModalAddTransaction = () => async dispatch => {
+export const openModalAddEvent = () => async dispatch => {
   dispatch(actions.openModalAddEvent());
 };
 
-export const closeModalAddTransaction = () => async dispatch => {
+export const closeModalAddEvent = () => async dispatch => {
   dispatch(actions.closeModalAddEvent());
 };

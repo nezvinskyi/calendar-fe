@@ -10,12 +10,12 @@ const Modal = ({ children }) => {
   const dispatch = useDispatch();
 
   const onClose = () => {
-    dispatch(globalOperations.closeModalAddTransaction());
+    dispatch(globalOperations.closeModalAddEvent());
   };
 
   const handleBackdropClick = e => {
     if (e.currentTarget === e.target) {
-      dispatch(globalOperations.closeModalAddTransaction());
+      dispatch(globalOperations.closeModalAddEvent());
     }
   };
 

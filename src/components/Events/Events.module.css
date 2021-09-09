@@ -14,6 +14,9 @@
   /* color:  */
   background-color: var(--bg-clr);
   border-left: 3px solid var(--main-clr);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .title {
