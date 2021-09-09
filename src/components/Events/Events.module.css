@@ -15,3 +15,22 @@
   background-color: var(--bg-clr);
   border-left: 3px solid var(--main-clr);
 }
+
+.title {
+  color: var(--main-clr);
+  font-weight: 600;
+}
+
+.delBtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border: 1px solid var(--main-clr);
+  /* background-color: white; */
+  background-image: url('../../assets/images/close-icon.svg');
+  background-position: center;
+  cursor: pointer;
+}

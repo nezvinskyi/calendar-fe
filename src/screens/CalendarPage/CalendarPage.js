@@ -1,4 +1,5 @@
-import { useSelector } from 'react-redux';
+import { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import { globalSelectors } from '../../redux/global';
 
 import {
@@ -10,9 +11,15 @@ import {
   Modal,
   AddEventForm,
 } from '../../components';
+import { calendarOperations } from '../../redux/calendar';
 
 const CalendarPage = () => {
+  const dispatch = useDispatch();
   const isModalOpen = useSelector(globalSelectors.getIsModalAddEventOpen);
+
+  useEffect(() => {
+    dispatch(calendarOperations.getEvents());
+  }, [dispatch]);
 
   return (
     <>

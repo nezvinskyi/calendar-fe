@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Switch } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { userOperations, userSelectors } from './redux/user';
+import { userOperations } from './redux/user';
 import { sessionSelectors } from './redux/session';
 import { globalSelectors } from './redux/global';
 

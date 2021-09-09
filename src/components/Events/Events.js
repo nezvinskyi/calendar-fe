@@ -1,10 +1,21 @@
+import { useSelector, useDispatch } from 'react-redux';
 import css from './Events.module.css';
-import { data } from '../../data/events';
-import { mapper } from '../../helpers/mapper';
 
-const mappedData = mapper(data);
+import { calendarOperations, calendarSelectors } from '../../redux/calendar';
+import { sessionOperations } from '../../redux/session';
 
 const Events = () => {
+  const mappedData = useSelector(calendarSelectors.mappedData);
+  const dispatch = useDispatch();
+
+  const handleDelete = id => {
+    try {
+      dispatch(calendarOperations.deleteEvent(id));
+    } catch (error) {
+      dispatch(sessionOperations.setError(error.toString()));
+    }
+  };
+
   return (
     <div className={css.eventsWrapper}>
       {mappedData.map(event => (
@@ -18,7 +29,8 @@ const Events = () => {
             transform: event.transform,
           }}
         >
-          {event.title}
+          <span className={css.title}>{event.title}</span>
+          <div className={css.delBtn} onClick={() => handleDelete(event._id)}></div>
         </div>
       ))}
     </div>

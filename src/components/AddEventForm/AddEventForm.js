@@ -9,7 +9,7 @@ import { timeToMinutes } from '../../helpers/timeConverter';
 const AddEventForm = () => {
   const dispatch = useDispatch();
 
-  const [title, setTitle] = useState(undefined);
+  const [title, setTitle] = useState('');
   const [start, setStart] = useState('08:00');
   const [duration, setDuration] = useState(15);
   const [comments, setComments] = useState('');
