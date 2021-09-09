@@ -28,7 +28,7 @@ const AddEventForm = () => {
   };
 
   const onClose = () => {
-    dispatch(globalOperations.closeModalAddTransaction());
+    dispatch(globalOperations.openModalAddEvent());
   };
 
   return (
@@ -76,7 +76,7 @@ const AddEventForm = () => {
 
           <Form.Control
             type="text"
-            placeholder="Enter title"
+            placeholder="Enter comments"
             value={comments}
             onChange={e => setComments(e.target.value)}
           />
