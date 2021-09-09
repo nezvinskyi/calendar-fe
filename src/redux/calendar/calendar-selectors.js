@@ -8,3 +8,7 @@ export const getAllEvents = state => {
 export const mappedData = createSelector([getAllEvents], events => {
   return mapper([...events]);
 });
+
+export const exportData = createSelector([mappedData], events => {
+  return [...events].map(ev => ({ start: ev.start, duration: ev.duration, title: ev.title }));
+});
